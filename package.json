@@ -1,0 +1,21 @@
+{
+  "name": "stage4-chat_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.mjs",
+    "dev": "env-cmd -f config/dev.env nodemon --experimental-modules src/index.mjs -e mjs,hbs,js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bad-words": "^3.0.4",
+    "express": "^4.17.2",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "nodemon": "^2.0.15"
+  }
+}
