@@ -82,6 +82,11 @@ button:disabled {
     width: 100%;
 }
 
+.option{
+    margin-left: 3px;
+    color: rgb(175, 175, 175);
+}
+
 /* Chat Page Layout */
 .chat {
     display: flex;
@@ -174,6 +179,10 @@ button:disabled {
     list-style-type: none;
     font-weight: 300;
     padding: 12px 24px 0 24px;
+}
+
+#capitalize{
+    text-transform: capitalize;
 }
 
 /* Scrollbar */
