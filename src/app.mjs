@@ -20,7 +20,7 @@ io.on('connection', (socket) => {
     console.log('New WebSocket connection')
 
     socket.on('join', ({ username, room }, callback) => {
-        if (room === '') room = 'General'
+        if (room === '') room = 'general'
         const { error, user } = addUser({ id: socket.id, username, room })
         if (error) return callback(error)
         socket.join(user.room)
